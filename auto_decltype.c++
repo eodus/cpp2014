@@ -3,12 +3,14 @@ int main(int argc, char* argv[]) {
     int i = 1;
     int j(2);
     int k{3};
+    int t = {3};
   }
 
   {
-    int i = 1.1;   // Warning will be caused
-    int j(2.2);    // Warning will be caused too
-    // int k{3.3}; // Error will be caused
+    int i = 1.1;      // Warning will be caused
+    int j(2.2);       // Warning will be caused too
+    // int k{3.3};    // Error will be caused
+    // int t = {3.3}; // Error will be caused
   }
 
   {
